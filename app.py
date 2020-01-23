@@ -11,6 +11,14 @@ from database import *
 def homepage():
 	return render_template("home.html")
 
+@app.route('/team')
+def teampage():
+	return render_template("team.html")
+
+@app.route('/family')
+def familypage():
+	return render_template("family.html")
+
 #####################
 
 

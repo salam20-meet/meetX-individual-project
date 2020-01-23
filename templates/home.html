@@ -12,28 +12,46 @@
 </head>
 <body>
 	
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav style="background-color:purple " class="navbar navbar-expand-sm ">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">Logo</a>
+  <a href="#"><img src="logo.pdf" ></a>
   
   <!-- Links -->
-  <ul class="navbar-nav">
+  <ul style="background-color:purple " class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href={{ url_for('homepage') }}>Home</a>
+      <a class="nav-link" href="{{ url_for('homepage') }}">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link"  href={{ url_for('teampage') }}>Teachers</a>
+      <a class="nav-link"  href="{{ url_for('teampage') }}">Teachers</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href={{ url_for('familypage') }}>the studio family</a>
+      <a class="nav-link" href="{{ url_for('familypage') }}">The studio family</a>
     </li>
   </ul>
 </nav>
 
-<div class="container-fluid">
-  <h3>Brand / Logo</h3>
-  <p>The .navbar-brand class is used to highlight the brand/logo/project name of your page.</p>
-</div>
+  <section class="page-section about-heading">
+    <div class="container">
+     
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+             
+                <span class="section-heading-lower">About Our Studio</span>
+              </h2>
+              <p>RABEA MORKUS DANCE STUDIO LOCATED IN KAFER YASSEF, A VILLAGE IN THE NORTH OF PALESTINE . IT IS A UNIQUE INITIATIVE IN THE ARAB SECTOR
+and offers a variety of extra-curricular dance classes for young people and adults 
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 	
 </body>
 </html>
