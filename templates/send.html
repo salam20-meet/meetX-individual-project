@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>we have succssesfuly recieved your message</p>
+
+{% for comment in all_comments %}
+
+<h1>{{ comment.comment }}</h1>
+<p>{{ comment.firstname }}</p>
+
+{% endfor %}
+</body>
+</html>

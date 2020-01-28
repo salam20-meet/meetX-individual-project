@@ -9,7 +9,10 @@ from database import *
 ##### Code here ######
 @app.route('/')
 def homepage():
+	all_comments=get_all_comments()
+	print(all_comments,"!!!!!!!!!!!!!!!!!!!")
 	return render_template("home.html")
+
 
 @app.route('/team')
 def teampage():
@@ -18,6 +21,18 @@ def teampage():
 @app.route('/family')
 def familypage():
 	return render_template("family.html")
+
+@app.route('/contact')
+def contactpage():
+	return render_template("contact.html")
+
+@app.route('/send', methods=['POST'])
+def sendpage():
+	subject = request.form['subject']
+	print(subject,"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+	return render_template("send.html",all_comments=get_all_comments())
+
+
 
 #####################
 
